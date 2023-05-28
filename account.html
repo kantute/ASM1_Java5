@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		body {
+			background-color: #f2f2f2;
+			font-family: 'Times New Roman', Times, serif;
+		}
+
+		header,
+		main {
+			display: block;
+			margin: 0 auto;
+			max-width: 800px;
+			padding: 20px;
+			width: 100%;
+		}
+
+		header {
+			background-color: #4CAF50;
+			color: #fff;
+			text-align: center;
+		}
+
+		main{
+			margin-top: 5%;
+			margin-bottom: 15%;
+		}
+
+		form {
+			background-color: #fff;
+			border-radius: 5px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+			margin: 20px auto;
+			padding: 20px;
+			width: 100%;
+		}
+
+		form label {
+			display: block;
+			font-weight: bold;
+			margin-bottom: 10px;
+			width: 30%;
+			float: left;
+			font-size: 20px;
+		}
+
+		form input[type="text"],
+		form input[type="password"],
+		form select {
+			border: 1px solid #ddd;
+			border-radius: 3px;
+			padding: 10px;
+			width: 70%;
+			float: right;
+		}
+
+		form input[type="submit"] {
+			background-color: #4CAF50;
+			border: none;
+			border-radius: 3px;
+			color: #fff;
+			cursor: pointer;
+			width: 20%;
+			padding: 10px;
+			margin-top: 20px;
+			margin-left: 40%;
+
+		}
+
+		.form-1 {
+			margin: 40px;
+			padding: 10px;
+		}
+
+		.donmua{
+			border: 2px;
+			padding: 2px;
+			margin: 5;
+		}
+		.anh-donmua {
+			width: 30%;
+			float: left;
+		}
+		.donmua-sp{
+			float: left;
+			font-size: 25px;
+		}
+		.gia{
+			font-size: 20px;
+			padding-top: 12%;
+			float: right;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<h1>Quản lý tài khoản</h1>
+	</header>
+
+	<main>
+		<div>
+			<h2>Quản lý thông tin hồ sơ</h2>
+			<form class="panel-body">
+				<div class="form-1">
+					<label for="username">Tên Đăng nhập: </label>
+					<input type="text" disabled id="username" name="username">
+				</div>
+				<div class="form-1">
+					<label for="name">Tên :</label>
+					<input type="text" id="name" name="name">
+				</div>
+				<div class="form-1">
+					<label for="numberphone">Số Điện Thoại:</label>
+					<input type="text" id="numberphone" name="numberphone">
+				</div>
+				<div class="form-1">
+					<label for="gender">Giới Tính: </label>
+					<label><input type="radio" ng-model="gender" value="NAM">Nam</label>
+					<label><input type="radio" ng-model="gender" value="NU">Nữ</label>
+				</div>
+				<div class="form-1">
+					<label for="brithday">Ngày Sinh: </label>
+					<input type="date" name="brithday">
+				</div>
+				<input type="submit" value="Lưu Thông Tin">
+			</form>
+		</div>
+		<div>
+			<h2>Đơn mua</h2>
+			<div class="donmua">
+				<div class="anh-donmua">
+					<img src="/anh/a.jpg">
+				</div>
+				<div>
+					<p class="donmua-sp">Áo </p>
+					<div class="gia">
+						<br>
+						<b>550,000đ</b><del>525,000đ</del>
+						<button class="c">Mua lại</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+</body>
+</html>

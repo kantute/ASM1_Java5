@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .cart {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .cart table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .cart th,
+        .cart td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .cart th {
+            background-color: #f2f2f2;
+        }
+
+        .cart .total {
+            font-weight: bold;
+            text-align: right;
+        }
+
+        .cart .actions {
+            margin-top: 20px;
+            text-align: right;
+        }
+
+        .cart .actions button {
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .cart .actions button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Giỏ hàng</h1>
+
+    <div class="cart">
+        <table>
+            <tr>
+                <th>Sản phẩm</th>
+                <th>Số lượng</th>
+                <th>Giá</th>
+            </tr>
+            <tr>
+                <td>Máy ảnh</td>
+                <td>1</td>
+                <td>$500</td>
+            </tr>
+            <tr>
+                <td>Điện thoại di động</td>
+                <td>2</td>
+                <td>$800</td>
+            </tr>
+            <tr class="total">
+                <td colspan="2">Tổng cộng</td>
+                <td>$1300</td>
+            </tr>
+        </table>
+
+        <div class="actions">
+            <button>Thanh toán</button>
+        </div>
+    </div>
+</body>
+
+</html>
